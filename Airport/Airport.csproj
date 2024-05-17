@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE284EB0-23A6-4A3D-9F3C-BC789CFFFA40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Airport</RootNamespace>
+    <AssemblyName>Airport</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bandara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bandara.Designer.cs">
+      <DependentUpon>Bandara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeliTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeliTiket.Designer.cs">
+      <DependentUpon>BeliTiket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mJadwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mJadwal.Designer.cs">
+      <DependentUpon>mJadwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mKode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mKode.Designer.cs">
+      <DependentUpon>mKode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mMaskapai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mMaskapai.Designer.cs">
+      <DependentUpon>mMaskapai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Costumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costumer.Designer.cs">
+      <DependentUpon>Costumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log.Designer.cs">
+      <DependentUpon>Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mStatus.Designer.cs">
+      <DependentUpon>mStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign.Designer.cs">
+      <DependentUpon>Sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Board.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Board.Designer.cs">
+      <DependentUpon>Board.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List.Designer.cs">
+      <DependentUpon>List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TiketSaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TiketSaya.Designer.cs">
+      <DependentUpon>TiketSaya.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bandara.resx">
+      <DependentUpon>Bandara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeliTiket.resx">
+      <DependentUpon>BeliTiket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mJadwal.resx">
+      <DependentUpon>mJadwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mKode.resx">
+      <DependentUpon>mKode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mMaskapai.resx">
+      <DependentUpon>mMaskapai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costumer.resx">
+      <DependentUpon>Costumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log.resx">
+      <DependentUpon>Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mStatus.resx">
+      <DependentUpon>mStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign.resx">
+      <DependentUpon>Sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Board.resx">
+      <DependentUpon>Board.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List.resx">
+      <DependentUpon>List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TiketSaya.resx">
+      <DependentUpon>TiketSaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Rect - Without Tagline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-alt-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-unselected-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-take-off-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-tag-alt-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Rect - Without Tagline - Without Padding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Alt - Without Padding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane-ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out-alt-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-take-off-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-land-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron-left-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-regular-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-regular-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-unselected-722.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-five-regular-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-regular-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron-left-solid-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-take-off-solid-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-selected-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-selected-722.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-tag-alt-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad-selected-72.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
